@@ -282,6 +282,9 @@ fun main(args : Array<String>) {
     sayHello("Derek")
 
     // Functions can return 2 values with Pair and 3 with Triple
+    fun nextTwo(num: Int): Pair<Int, Int>
+    {  return Pair(num+1, num+2) }
+    // Returns 2 values out side of main
     val (two, three) = nextTwo(1)
     println("1 $two $three")
 
